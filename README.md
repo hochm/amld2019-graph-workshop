@@ -70,6 +70,12 @@ in the terminal, from within the `amld2019_graph_workshop` environment.
 [miniconda]: https://conda.io/miniconda.html
 [anaconda]: https://anaconda.org
 
+## FAQ
+
+
+* MacOSX throws a `distutils.errors.LinkError: command 'x86_64-apple-darwin13.4.0-clang' failed with exit status 1`
+  Fix: ensure that pipe runs with the right clang version by installing pyproj (which needs specific clang version) upfront:  `CC=clang pip install pyproj`
+
 ## Acknowledgments
 
 The content of the workshop is inspired by the following resources:
